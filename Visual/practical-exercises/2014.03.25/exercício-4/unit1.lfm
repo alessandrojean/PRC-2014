@@ -1,0 +1,105 @@
+object Form1: TForm1
+  Left = 572
+  Height = 302
+  Top = 196
+  Width = 365
+  Caption = 'Form1'
+  ClientHeight = 302
+  ClientWidth = 365
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 88
+    Height = 17
+    Top = 24
+    Width = 196
+    Caption = 'Programa sobre Triângulos'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 16
+    Top = 103
+    Width = 38
+    Caption = 'Lado A'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 16
+    Top = 143
+    Width = 37
+    Caption = 'Lado B'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 8
+    Height = 16
+    Top = 191
+    Width = 38
+    Caption = 'Lado C'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 79
+    Height = 23
+    Top = 96
+    Width = 80
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 79
+    Height = 23
+    Top = 143
+    Width = 80
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 79
+    Height = 23
+    Top = 191
+    Width = 80
+    TabOrder = 2
+  end
+  object Button1: TButton
+    Left = 192
+    Height = 25
+    Top = 96
+    Width = 139
+    Caption = 'Formam um Triângulo?'
+    OnClick = Button1Click
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 79
+    Height = 25
+    Top = 255
+    Width = 75
+    Caption = 'LIMPAR'
+    OnClick = Button2Click
+    TabOrder = 4
+  end
+  object Button3: TButton
+    Left = 256
+    Height = 25
+    Top = 255
+    Width = 75
+    Caption = 'SAIR'
+    OnClick = Button3Click
+    TabOrder = 5
+  end
+  object ListBox1: TListBox
+    Left = 192
+    Height = 72
+    Top = 151
+    Width = 139
+    ItemHeight = 0
+    TabOrder = 6
+  end
+end

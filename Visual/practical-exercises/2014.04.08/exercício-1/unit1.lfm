@@ -1,0 +1,164 @@
+object FrmCrescente: TFrmCrescente
+  Left = 1091
+  Height = 248
+  Top = 118
+  Width = 320
+  BorderStyle = bsSingle
+  Caption = 'Exercício 01'
+  ClientHeight = 228
+  ClientWidth = 320
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -15
+  Font.Name = 'Arial Narrow'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Font.Style = [fsBold]
+  Menu = MainMenu1
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 17
+    Height = 21
+    Top = 16
+    Width = 70
+    Caption = '1º Número: '
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 17
+    Height = 21
+    Top = 48
+    Width = 70
+    Caption = '2º Número: '
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 21
+    Top = 80
+    Width = 70
+    Caption = '3º Número: '
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 16
+    Height = 21
+    Top = 112
+    Width = 70
+    Caption = '4º Número: '
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 17
+    Height = 21
+    Top = 144
+    Width = 70
+    Caption = '5º Número: '
+    ParentColor = False
+  end
+  object txtn1: TEdit
+    Left = 88
+    Height = 28
+    Top = 9
+    Width = 80
+    TabOrder = 0
+  end
+  object txtn2: TEdit
+    Left = 88
+    Height = 28
+    Top = 41
+    Width = 80
+    TabOrder = 1
+  end
+  object txtn3: TEdit
+    Left = 88
+    Height = 28
+    Top = 73
+    Width = 80
+    TabOrder = 2
+  end
+  object txtn4: TEdit
+    Left = 88
+    Height = 28
+    Top = 105
+    Width = 80
+    TabOrder = 3
+  end
+  object txtn5: TEdit
+    Left = 88
+    Height = 28
+    Top = 137
+    Width = 80
+    TabOrder = 4
+  end
+  object BitBtn1: TBitBtn
+    Left = 184
+    Height = 30
+    Top = 7
+    Width = 123
+    Caption = '&Classificar'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 5
+  end
+  object BitBtn2: TBitBtn
+    Left = 184
+    Height = 30
+    Top = 71
+    Width = 123
+    Cancel = True
+    Caption = '&Cancelar'
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BitBtn2Click
+    TabOrder = 6
+  end
+  object BitBtn3: TBitBtn
+    Left = 184
+    Height = 30
+    Top = 135
+    Width = 123
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = BitBtn3Click
+    TabOrder = 7
+  end
+  object LblSaida: TLabel
+    Left = 17
+    Height = 21
+    Top = 189
+    Width = 290
+    Alignment = taCenter
+    AutoSize = False
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object MainMenu1: TMainMenu
+    left = 24
+    top = 680
+    object MenuItem1: TMenuItem
+      Caption = 'Opções'
+      object MenuItem2: TMenuItem
+        Caption = 'Classificar'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Cancelar'
+        OnClick = MenuItem3Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Fechar'
+        OnClick = MenuItem4Click
+      end
+    end
+  end
+end

@@ -1,0 +1,73 @@
+object Form1: TForm1
+  Left = 844
+  Height = 284
+  Top = 221
+  Width = 434
+  Caption = 'Form1'
+  ClientHeight = 284
+  ClientWidth = 434
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 48
+    Height = 17
+    Top = 48
+    Width = 319
+    Caption = 'Transformação de Escalas de Temperaturas'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -13
+    Font.Name = 'Verdana'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 56
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'ºF para ºC'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 56
+    Height = 25
+    Top = 171
+    Width = 75
+    Caption = 'ºC para ºF'
+    OnClick = Button2Click
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 264
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 2
+  end
+  object Edit2: TEdit
+    Left = 264
+    Height = 23
+    Top = 173
+    Width = 80
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Left = 347
+    Height = 16
+    Top = 112
+    Width = 14
+    Caption = 'ºC'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 347
+    Height = 16
+    Top = 171
+    Width = 12
+    Caption = 'ºF'
+    ParentColor = False
+  end
+end
