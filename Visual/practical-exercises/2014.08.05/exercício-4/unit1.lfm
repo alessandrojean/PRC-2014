@@ -1,0 +1,84 @@
+object Form1: TForm1
+  Left = 1046
+  Height = 177
+  Top = 122
+  Width = 202
+  BorderStyle = bsSingle
+  Caption = 'Form1'
+  ClientHeight = 177
+  ClientWidth = 202
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 32
+    Height = 16
+    Top = 8
+    Width = 143
+    Caption = 'Calculo de Média de Notas'
+    ParentColor = False
+  end
+  object BitBtn1: TBitBtn
+    Left = 40
+    Height = 30
+    Top = 32
+    Width = 128
+    Caption = '&Digitar as notas'
+    Kind = bkAll
+    ModalResult = 8
+    OnClick = BitBtn1Click
+    TabOrder = 0
+  end
+  object Label2: TLabel
+    Left = 8
+    Height = 16
+    Top = 80
+    Width = 98
+    Caption = 'Número de Notas:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 8
+    Height = 16
+    Top = 108
+    Width = 42
+    Caption = 'Médias:'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 112
+    Height = 23
+    Top = 73
+    Width = 80
+    Enabled = False
+    TabOrder = 1
+  end
+  object Edit2: TEdit
+    Left = 112
+    Height = 23
+    Top = 101
+    Width = 80
+    Enabled = False
+    TabOrder = 2
+  end
+  object BitBtn2: TBitBtn
+    Left = 8
+    Height = 30
+    Top = 136
+    Width = 75
+    Caption = '&Limpar'
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BitBtn2Click
+    TabOrder = 3
+  end
+  object BitBtn3: TBitBtn
+    Left = 117
+    Height = 30
+    Top = 136
+    Width = 75
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 4
+  end
+end

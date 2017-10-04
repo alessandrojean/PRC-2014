@@ -1,0 +1,15 @@
+program Media;
+
+uses
+  Forms,
+  UnitCadastro in 'UnitCadastro.pas' {FrmCadastro},
+  UnitPrincipal in 'UnitPrincipal.pas' {FrmPrincipal};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TFrmPrincipal, FrmPrincipal);
+  Application.CreateForm(TFrmCadastro, FrmCadastro);
+  Application.Run;
+end.

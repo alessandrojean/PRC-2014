@@ -1,0 +1,66 @@
+object Form1: TForm1
+  Left = 1051
+  Height = 392
+  Top = 113
+  Width = 337
+  BorderStyle = bsSingle
+  Caption = 'Lista de Componentes de Hardware'
+  ClientHeight = 392
+  ClientWidth = 337
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 9
+    Height = 23
+    Top = 8
+    Width = 35
+    Caption = 'Itens'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -17
+    Font.Name = 'Arial Narrow'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+  object ListBox1: TListBox
+    Left = 9
+    Height = 152
+    Top = 32
+    Width = 127
+    Color = clBtnFace
+    Items.Strings = (
+      'Monitor'
+      'Teclado'
+      'Mouse'
+      'Placa-Mãe'
+      'Processador'
+      'Cooler'
+      'Memória'
+      'Fonte de Alimentação'
+    )
+    ItemHeight = 15
+    OnClick = ListBox1Click
+    TabOrder = 0
+  end
+  object Image1: TImage
+    Left = 144
+    Height = 152
+    Top = 32
+    Width = 184
+    Center = True
+    Proportional = True
+    Stretch = True
+  end
+  object Label2: TLabel
+    Left = 9
+    Height = 192
+    Top = 192
+    Width = 319
+    AutoSize = False
+    ParentColor = False
+    WordWrap = True
+  end
+end

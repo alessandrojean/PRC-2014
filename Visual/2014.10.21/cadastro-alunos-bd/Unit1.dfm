@@ -1,0 +1,210 @@
+object FrmCadastro: TFrmCadastro
+  Left = 803
+  Top = 424
+  BorderStyle = bsSingle
+  Caption = 'Cadastro de Alunos'
+  ClientHeight = 343
+  ClientWidth = 443
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -16
+  Font.Name = 'Arial Narrow'
+  Font.Style = []
+  OldCreateOrder = False
+  PopupMenu = PopupMenu1
+  Position = poScreenCenter
+  OnClose = FormClose
+  PixelsPerInch = 96
+  TextHeight = 20
+  object Label1: TLabel
+    Left = 71
+    Top = 8
+    Width = 289
+    Height = 43
+    Caption = 'Cadastro de Alunos'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clMenuText
+    Font.Height = -37
+    Font.Name = 'Arial Narrow'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label2: TLabel
+    Left = 68
+    Top = 6
+    Width = 289
+    Height = 43
+    Alignment = taRightJustify
+    Caption = 'Cadastro de Alunos'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clHighlight
+    Font.Height = -37
+    Font.Name = 'Arial Narrow'
+    Font.Style = [fsBold]
+    ParentFont = False
+    Transparent = True
+  end
+  object Label3: TLabel
+    Left = 46
+    Top = 80
+    Width = 51
+    Height = 20
+    Caption = 'N'#250'mero:'
+  end
+  object Label4: TLabel
+    Left = 57
+    Top = 112
+    Width = 40
+    Height = 20
+    Caption = 'Nome:'
+  end
+  object Label5: TLabel
+    Left = 50
+    Top = 144
+    Width = 47
+    Height = 20
+    Caption = '1'#170' Nota:'
+  end
+  object Label6: TLabel
+    Left = 50
+    Top = 176
+    Width = 47
+    Height = 20
+    Caption = '2'#170' Nota:'
+  end
+  object Label7: TLabel
+    Left = 56
+    Top = 208
+    Width = 41
+    Height = 20
+    Caption = 'M'#233'dia:'
+  end
+  object Label8: TLabel
+    Left = 40
+    Top = 240
+    Width = 57
+    Height = 20
+    Caption = 'Conceito:'
+  end
+  object Edit1: TEdit
+    Left = 104
+    Top = 80
+    Width = 73
+    Height = 28
+    TabOrder = 0
+  end
+  object Edit2: TEdit
+    Left = 104
+    Top = 112
+    Width = 241
+    Height = 28
+    CharCase = ecUpperCase
+    TabOrder = 1
+  end
+  object Edit3: TEdit
+    Left = 104
+    Top = 144
+    Width = 73
+    Height = 28
+    TabOrder = 2
+  end
+  object Edit4: TEdit
+    Left = 104
+    Top = 176
+    Width = 73
+    Height = 28
+    TabOrder = 3
+  end
+  object Edit5: TEdit
+    Left = 104
+    Top = 208
+    Width = 73
+    Height = 28
+    Enabled = False
+    TabOrder = 4
+  end
+  object Edit6: TEdit
+    Left = 104
+    Top = 240
+    Width = 137
+    Height = 28
+    CharCase = ecUpperCase
+    Enabled = False
+    TabOrder = 5
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Top = 280
+    Width = 425
+    Height = 49
+    TabOrder = 6
+    object BitBtn1: TBitBtn
+      Left = 115
+      Top = 16
+      Width = 97
+      Height = 25
+      Caption = '&Calcular'
+      TabOrder = 0
+      OnClick = BitBtn1Click
+      Kind = bkOK
+    end
+    object BitBtn2: TBitBtn
+      Left = 219
+      Top = 16
+      Width = 97
+      Height = 25
+      Caption = 'C&ancelar'
+      TabOrder = 1
+      OnClick = BitBtn2Click
+      Kind = bkCancel
+    end
+    object BitBtn3: TBitBtn
+      Left = 320
+      Top = 16
+      Width = 97
+      Height = 25
+      Caption = '&Fechar'
+      TabOrder = 2
+      OnClick = BitBtn3Click
+      Kind = bkClose
+    end
+    object BitBtn4: TBitBtn
+      Left = 8
+      Top = 16
+      Width = 97
+      Height = 25
+      Caption = '&Incluir'
+      TabOrder = 3
+      Kind = bkRetry
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 272
+    Top = 200
+    object Calcular1: TMenuItem
+      Caption = 'Calcular'
+      OnClick = Calcular1Click
+    end
+    object Cancelar1: TMenuItem
+      Caption = 'Cancelar'
+      OnClick = Cancelar1Click
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object Sair1: TMenuItem
+      Caption = 'Sair'
+      OnClick = Sair1Click
+    end
+  end
+  object DataSource1: TDataSource
+    Left = 312
+    Top = 208
+  end
+  object Table1: TTable
+    Left = 368
+    Top = 216
+  end
+end

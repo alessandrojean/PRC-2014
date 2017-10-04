@@ -1,0 +1,155 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, Menus, DB, DBTables;
+
+type
+  TFrmCadastro = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Edit3: TEdit;
+    Edit4: TEdit;
+    Edit5: TEdit;
+    Edit6: TEdit;
+    GroupBox1: TGroupBox;
+    BitBtn1: TBitBtn;
+    BitBtn2: TBitBtn;
+    BitBtn3: TBitBtn;
+    PopupMenu1: TPopupMenu;
+    Calcular1: TMenuItem;
+    Cancelar1: TMenuItem;
+    N2: TMenuItem;
+    Sair1: TMenuItem;
+    DataSource1: TDataSource;
+    Table1: TTable;
+    BitBtn4: TBitBtn;
+    procedure BitBtn1Click(Sender: TObject);
+    procedure BitBtn2Click(Sender: TObject);
+    procedure BitBtn3Click(Sender: TObject);
+    procedure Calcular1Click(Sender: TObject);
+    procedure Cancelar1Click(Sender: TObject);
+    procedure Sair1Click(Sender: TObject);
+    procedure FormClose(Sender: TObject; var Action: TCloseAction);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  FrmCadastro: TFrmCadastro;
+  x,y:real;
+implementation
+
+uses Unit2;
+
+{$R *.dfm}
+procedure Calcular(x,y:real);
+var
+  med:real;
+begin
+  med:=(x+y)/2;
+  FrmCadastro.Edit5.Text:=FloatToStr(med);
+  if(med<5) then
+  FrmCadastro.Edit6.Text:='I - Insatisfatório';
+  if(med>=5) and (med<7) then
+  FrmCadastro.Edit6.Text:='R - Regular';
+  if(med>=7) and (med<9) then
+  FrmCadastro.Edit6.Text:='B - Bom';
+  if(med>=9)then
+  FrmCadastro.Edit6.Text:='MB - Muito Bom';
+
+end;
+
+procedure Limpar();
+begin
+    FrmCadastro.Edit1.Clear;
+    FrmCadastro.Edit2.Clear;
+    FrmCadastro.Edit3.Clear;
+    FrmCadastro.Edit4.Clear;
+    FrmCadastro.Edit5.Clear;
+    FrmCadastro.Edit6.Clear;
+    FrmCadastro.Edit1.setFocus;
+    end;
+
+procedure TFrmCadastro.BitBtn1Click(Sender: TObject);
+begin
+  if (Edit3.Text<>'') or (Edit4.Text<>'') then begin
+   x:=StrToFloat(Edit3.Text);
+   if(x>10) or (x<0) then
+   begin
+   Application.MessageBox('Nota 1 inválida','ERROR',mb_iconerror+0);
+   Edit3.SetFocus;
+   end
+   else
+   y:=StrToFloat(Edit4.Text);
+   if(y>10) or (y<0) then
+   begin
+   Application.MessageBox('Nota 2 inválida','ERROR',mb_iconerror+0);
+   Edit4.SetFocus;
+   end
+   else
+   Calcular(x,y);
+   end
+   else
+   Application.MessageBox('Campos em branco','ERROR',mb_iconerror+0);
+
+end;
+
+procedure TFrmCadastro.BitBtn2Click(Sender: TObject);
+begin
+Limpar();
+end;
+
+procedure TFrmCadastro.BitBtn3Click(Sender: TObject);
+begin
+FrmCadastro.Close;
+end;
+
+procedure TFrmCadastro.Calcular1Click(Sender: TObject);
+begin
+x:=StrToFloat(Edit3.Text);
+   if(x>10) or (x<0) then
+   begin
+   Application.MessageBox('Nota 1 inválida','ERROR',mb_iconerror+0);
+   Edit3.SetFocus;
+   end
+   else
+   y:=StrToFloat(Edit4.Text);
+   if(y>10) or (y<0) then
+   begin
+   Application.MessageBox('Nota 2 inválida','ERROR',mb_iconerror+0);
+   Edit4.SetFocus;
+   end
+   else
+   Calcular(x,y);
+end;
+
+procedure TFrmCadastro.Cancelar1Click(Sender: TObject);
+begin
+Limpar();
+end;
+
+procedure TFrmCadastro.Sair1Click(Sender: TObject);
+begin
+FrmCadastro.Close;
+end;
+
+procedure TFrmCadastro.FormClose(Sender: TObject;
+  var Action: TCloseAction);
+begin
+FrmPrincipal.Enabled:=true;
+end;
+
+end.

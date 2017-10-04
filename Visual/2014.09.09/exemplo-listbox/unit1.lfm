@@ -1,0 +1,81 @@
+object Form1: TForm1
+  Left = 1067
+  Height = 207
+  Top = 118
+  Width = 254
+  BorderStyle = bsSingle
+  Caption = 'ListBox'
+  ClientHeight = 207
+  ClientWidth = 254
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 12
+    Height = 16
+    Top = 16
+    Width = 93
+    Caption = 'Digite um nome :'
+    ParentColor = False
+  end
+  object Edit1: TEdit
+    Left = 112
+    Height = 23
+    Top = 9
+    Width = 128
+    TabOrder = 0
+  end
+  object ListBox1: TListBox
+    Left = 12
+    Height = 153
+    Top = 40
+    Width = 120
+    Color = clBtnFace
+    ItemHeight = 0
+    TabOrder = 1
+  end
+  object btAdicionaItem: TButton
+    Left = 141
+    Height = 25
+    Top = 40
+    Width = 99
+    Caption = 'Adicionar Item'
+    OnClick = btAdicionaItemClick
+    TabOrder = 2
+  end
+  object btContar: TButton
+    Left = 141
+    Height = 25
+    Top = 72
+    Width = 99
+    Caption = 'Contar Itens'
+    OnClick = btContarClick
+    TabOrder = 3
+  end
+  object btRemoveItem: TButton
+    Left = 141
+    Height = 25
+    Top = 104
+    Width = 99
+    Caption = 'Remover Item'
+    OnClick = btRemoveItemClick
+    TabOrder = 4
+  end
+  object btRemoveTudo: TButton
+    Left = 141
+    Height = 25
+    Top = 136
+    Width = 99
+    Caption = 'Remover Tudo'
+    OnClick = btRemoveTudoClick
+    TabOrder = 5
+  end
+  object btFecha: TButton
+    Left = 141
+    Height = 25
+    Top = 168
+    Width = 99
+    Caption = '&Fechar'
+    OnClick = btFechaClick
+    TabOrder = 6
+  end
+end

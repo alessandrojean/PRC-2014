@@ -1,0 +1,10 @@
+Fabricante: Thermaltake
+Características Técnicas: 
+Alta confiabilidade, bomba de perfil baixo oferece rápida circulação e queda da temperatura. 
+Intel: LGA2011, LGA1366, LGA1156, LGA1155, LGA775
+AMD: FM1, AM3+, AM3, AM2+, AM2
+Bomba de água:
+Suporte para duas ventoinhas
+Conceito: Soquete universal com Radiador de alta eficiência e ventoinhas super potentes.
+
+R$487,90

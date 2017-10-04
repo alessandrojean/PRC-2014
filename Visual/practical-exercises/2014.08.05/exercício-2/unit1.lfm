@@ -1,0 +1,157 @@
+object Form1: TForm1
+  Left = 1033
+  Height = 213
+  Top = 132
+  Width = 349
+  BorderStyle = bsSingle
+  Caption = 'Ordenando Números'
+  ClientHeight = 213
+  ClientWidth = 349
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 111
+    Top = 8
+    Width = 160
+    Caption = 'Números'
+    ClientHeight = 93
+    ClientWidth = 156
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 13
+      Height = 16
+      Top = 14
+      Width = 40
+      Caption = 'Valor 1:'
+      ParentColor = False
+    end
+    object txtn1: TEdit
+      Left = 68
+      Height = 23
+      Top = 7
+      Width = 80
+      TabOrder = 0
+      Text = '0'
+    end
+    object txtn2: TEdit
+      Left = 68
+      Height = 23
+      Top = 32
+      Width = 80
+      TabOrder = 1
+      Text = '0'
+    end
+    object Label2: TLabel
+      Left = 13
+      Height = 16
+      Top = 39
+      Width = 40
+      Caption = 'Valor 2:'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 13
+      Height = 16
+      Top = 61
+      Width = 40
+      Caption = 'Valor 3:'
+      ParentColor = False
+    end
+    object txtn3: TEdit
+      Left = 68
+      Height = 23
+      Top = 56
+      Width = 80
+      TabOrder = 2
+      Text = '0'
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 176
+    Height = 80
+    Top = 8
+    Width = 161
+    Caption = 'Ação Desejada'
+    ClientHeight = 62
+    ClientWidth = 157
+    TabOrder = 1
+    object rbcres: TRadioButton
+      Left = 15
+      Height = 19
+      Top = 8
+      Width = 110
+      Caption = 'Ordem crescente'
+      TabOrder = 0
+    end
+    object rbdes: TRadioButton
+      Left = 14
+      Height = 19
+      Top = 34
+      Width = 123
+      Caption = 'Ordem decrescente'
+      TabOrder = 1
+    end
+  end
+  object BitBtn1: TBitBtn
+    Left = 176
+    Height = 30
+    Top = 88
+    Width = 161
+    Caption = '&Ordenar'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 2
+  end
+  object lblacao: TLabel
+    Left = 8
+    Height = 26
+    Top = 126
+    Width = 328
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Ação Escolhida'
+    Color = 4227327
+    Layout = tlCenter
+    ParentColor = False
+    Transparent = False
+  end
+  object l1: TLabel
+    Left = 8
+    Height = 26
+    Top = 176
+    Width = 96
+    Alignment = taCenter
+    AutoSize = False
+    Color = clYellow
+    Layout = tlCenter
+    ParentColor = False
+    Transparent = False
+  end
+  object l2: TLabel
+    Left = 125
+    Height = 26
+    Top = 176
+    Width = 96
+    Alignment = taCenter
+    AutoSize = False
+    Color = clYellow
+    Layout = tlCenter
+    ParentColor = False
+    Transparent = False
+  end
+  object l3: TLabel
+    Left = 241
+    Height = 26
+    Top = 176
+    Width = 96
+    Alignment = taCenter
+    AutoSize = False
+    Color = clYellow
+    Layout = tlCenter
+    ParentColor = False
+    Transparent = False
+  end
+end

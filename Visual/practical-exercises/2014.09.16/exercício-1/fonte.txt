@@ -1,0 +1,10 @@
+Fabricante: C3 Tech
+Características Técnicas: 
+Saída de +12V “single rail” para até 38A de corrente. 
+Tipos de Proteção: curto circuito
+Quantidade Conectores: SATA 4
+Quantidade Conectores: IDE 5
+Quantidade Conectores: VGA 6 pinos 2
+Conceito: Com a vantagem de possuir a garantia de qualidade C3 Tech, essa fonte possui uma ótima proteção em casos de curto circuito.
+
+R$249,90

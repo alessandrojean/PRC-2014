@@ -1,0 +1,10 @@
+Fabricante: Kingston
+Características Técnicas: 
+Capacidade: 8GB
+Velocidade: DDR3 1333
+Latência CAS: 9
+Tensão: 1.5V
+Buffered / Registro: Unbuffered
+Conceito: Uma ótima memória com 8GB, tecnologia DDR3 SDRAM, chapamento em ouro e velocidade de 1333MHz
+
+R$284,90

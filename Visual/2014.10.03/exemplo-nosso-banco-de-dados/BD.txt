@@ -1,0 +1,4 @@
+create database escola;
+use escola;
+
+create table alunos(codigo int auto_increment,nome varchar(100),primary key(codigo));
