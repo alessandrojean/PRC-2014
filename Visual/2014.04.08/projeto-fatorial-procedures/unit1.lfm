@@ -1,0 +1,76 @@
+object FrmFatorial: TFrmFatorial
+  Left = 1096
+  Height = 204
+  Top = 149
+  Width = 246
+  BorderStyle = bsSingle
+  Caption = 'Fatorial'
+  ClientHeight = 184
+  ClientWidth = 246
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -15
+  Font.Name = 'Arial Narrow'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Font.Style = [fsBold]
+  Menu = MainMenu1
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 21
+    Top = 31
+    Width = 116
+    Caption = 'Digite um número: '
+    ParentColor = False
+  end
+  object txtvalor: TEdit
+    Left = 152
+    Height = 28
+    Top = 24
+    Width = 80
+    Alignment = taCenter
+    TabOrder = 0
+    Text = '0'
+  end
+  object BitBtn1: TBitBtn
+    Left = 64
+    Height = 30
+    Top = 80
+    Width = 131
+    Caption = '&Processar'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 1
+  end
+  object LblSaida: TLabel
+    Left = 24
+    Height = 21
+    Top = 144
+    Width = 208
+    Alignment = taCenter
+    AutoSize = False
+    ParentColor = False
+  end
+  object MainMenu1: TMainMenu
+    left = 168
+    top = 632
+    object MenuItem1: TMenuItem
+      Caption = 'Opções'
+      object MenuItem2: TMenuItem
+        Caption = 'Processar'
+        OnClick = MenuItem2Click
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Cancelar'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem3: TMenuItem
+        Caption = 'Sair'
+        OnClick = MenuItem3Click
+      end
+    end
+  end
+end

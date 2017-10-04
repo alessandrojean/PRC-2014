@@ -1,0 +1,59 @@
+object FrmVerifica: TFrmVerifica
+  Left = 1074
+  Height = 108
+  Top = 117
+  Width = 281
+  BorderStyle = bsSingle
+  Caption = 'Verifica Números'
+  ClientHeight = 108
+  ClientWidth = 281
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -13
+  Font.Name = 'Verdana'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 17
+    Top = 24
+    Width = 126
+    Caption = 'Digite um número: '
+    ParentColor = False
+  end
+  object txtnumero: TEdit
+    Left = 144
+    Height = 24
+    Top = 17
+    Width = 80
+    TabOrder = 0
+  end
+  object BtnVerifica: TButton
+    Left = 16
+    Height = 26
+    Top = 64
+    Width = 75
+    Caption = '&Verificar'
+    OnClick = BtnVerificaClick
+    TabOrder = 1
+  end
+  object BtnCancelar: TButton
+    Left = 104
+    Height = 26
+    Top = 64
+    Width = 75
+    Caption = '&Cancelar'
+    OnClick = BtnCancelarClick
+    TabOrder = 2
+  end
+  object BtnSair: TButton
+    Left = 192
+    Height = 26
+    Top = 64
+    Width = 75
+    Caption = '&Sair'
+    OnClick = BtnSairClick
+    TabOrder = 3
+  end
+end
