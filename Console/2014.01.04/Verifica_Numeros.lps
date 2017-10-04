@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="1">
+      <Unit0>
+        <Filename Value="Verifica_Numeros.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="Verifica_Numeros"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="38" Y="22"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+    </Units>
+    <General>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="Verifica_Numeros.lpr"/>
+        <Caret Line="21" Column="13" TopLine="1"/>
+      </Position1>
+      <Position2>
+        <Filename Value="Verifica_Numeros.lpr"/>
+        <Caret Line="26" Column="10" TopLine="1"/>
+      </Position2>
+      <Position3>
+        <Filename Value="Verifica_Numeros.lpr"/>
+        <Caret Line="27" Column="31" TopLine="1"/>
+      </Position3>
+      <Position4>
+        <Filename Value="Verifica_Numeros.lpr"/>
+        <Caret Line="26" Column="12" TopLine="1"/>
+      </Position4>
+    </JumpHistory>
+  </ProjectSession>
+</CONFIG>
