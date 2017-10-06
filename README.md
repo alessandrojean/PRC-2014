@@ -1,4 +1,5 @@
 # PRC-2014
+![Year](https://img.shields.io/badge/year-2014-blue.svg) ![Last class](https://img.shields.io/badge/last_class-2014.11.04-green.svg) ![Language](https://img.shields.io/badge/language-Pascal-yellow.svg) ![IDE](https://img.shields.io/badge/IDE-Lazarus-orange.svg)
 
 Simple repository for the algorithms written in the classes of "Programação de Computadores", in Pascal language, using Lazarus.
 
