@@ -1,0 +1,41 @@
+object FrmAsterisco: TFrmAsterisco
+  Left = 1051
+  Height = 179
+  Top = 283
+  Width = 230
+  Caption = 'Asteriscos'
+  ClientHeight = 179
+  ClientWidth = 230
+  LCLVersion = '1.0.14.0'
+  object LBoxA: TListBox
+    Left = 23
+    Height = 152
+    Top = 16
+    Width = 100
+    Color = clBtnFace
+    ItemHeight = 0
+    TabOrder = 0
+  end
+  object BtnExibir: TBitBtn
+    Left = 144
+    Height = 30
+    Top = 40
+    Width = 75
+    Caption = '&Exibir'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BtnExibirClick
+    TabOrder = 1
+  end
+  object BtnSair: TBitBtn
+    Left = 144
+    Height = 30
+    Top = 104
+    Width = 75
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 2
+  end
+end

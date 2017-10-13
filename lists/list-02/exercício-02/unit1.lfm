@@ -1,0 +1,115 @@
+object FrmNota: TFrmNota
+  Left = 1052
+  Height = 194
+  Top = 126
+  Width = 278
+  BorderStyle = bsSingle
+  Caption = 'Exercício 02'
+  ClientHeight = 194
+  ClientWidth = 278
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 16
+    Top = 25
+    Width = 44
+    Caption = '1º Nota:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 16
+    Top = 61
+    Width = 44
+    Caption = '2º Nota:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 24
+    Height = 16
+    Top = 97
+    Width = 44
+    Caption = '3º Nota:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 24
+    Height = 16
+    Top = 130
+    Width = 44
+    Caption = '4º Nota:'
+    ParentColor = False
+  end
+  object lbnota: TLabel
+    Left = 24
+    Height = 16
+    Top = 165
+    Width = 7
+    Caption = 'a'
+    ParentColor = False
+  end
+  object txtn1: TEdit
+    Left = 80
+    Height = 23
+    Top = 18
+    Width = 80
+    TabOrder = 0
+  end
+  object txtn2: TEdit
+    Left = 80
+    Height = 23
+    Top = 54
+    Width = 80
+    TabOrder = 1
+  end
+  object txtn3: TEdit
+    Left = 80
+    Height = 23
+    Top = 90
+    Width = 80
+    TabOrder = 2
+  end
+  object txtn4: TEdit
+    Left = 80
+    Height = 23
+    Top = 123
+    Width = 80
+    TabOrder = 3
+  end
+  object BtnExibir: TBitBtn
+    Left = 176
+    Height = 30
+    Top = 10
+    Width = 88
+    Caption = '&Exibir'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BtnExibirClick
+    TabOrder = 4
+  end
+  object BtnCancelar: TBitBtn
+    Left = 176
+    Height = 30
+    Top = 63
+    Width = 88
+    Cancel = True
+    Caption = '&Cancelar'
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BtnCancelarClick
+    TabOrder = 5
+  end
+  object BtnSair: TBitBtn
+    Left = 176
+    Height = 30
+    Top = 117
+    Width = 88
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = BtnSairClick
+    TabOrder = 6
+  end
+end

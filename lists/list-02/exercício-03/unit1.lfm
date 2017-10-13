@@ -1,0 +1,96 @@
+object FrmPS: TFrmPS
+  Left = 1077
+  Height = 184
+  Top = 181
+  Width = 320
+  BorderStyle = bsSingle
+  Caption = 'Predecessor e Sucessor'
+  ClientHeight = 184
+  ClientWidth = 320
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 24
+    Height = 16
+    Top = 25
+    Width = 48
+    Caption = 'Número:'
+    ParentColor = False
+  end
+  object lbnota: TLabel
+    Left = 24
+    Height = 16
+    Top = 56
+    Width = 78
+    Caption = 'Predecessores:'
+    ParentColor = False
+  end
+  object txtn1: TEdit
+    Left = 80
+    Height = 23
+    Top = 18
+    Width = 80
+    TabOrder = 0
+  end
+  object BtnExibir: TBitBtn
+    Left = 216
+    Height = 30
+    Top = 11
+    Width = 88
+    Caption = '&Exibir'
+    Default = True
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BtnExibirClick
+    TabOrder = 1
+  end
+  object BtnCancelar: TBitBtn
+    Left = 216
+    Height = 30
+    Top = 72
+    Width = 88
+    Cancel = True
+    Caption = '&Cancelar'
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BtnCancelarClick
+    TabOrder = 2
+  end
+  object BtnSair: TBitBtn
+    Left = 216
+    Height = 30
+    Top = 130
+    Width = 88
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = BtnSairClick
+    TabOrder = 3
+  end
+  object LboxA: TListBox
+    Left = 32
+    Height = 80
+    Top = 80
+    Width = 57
+    Color = clBtnFace
+    ItemHeight = 0
+    TabOrder = 4
+  end
+  object LboxP: TListBox
+    Left = 120
+    Height = 80
+    Top = 80
+    Width = 57
+    Color = clBtnFace
+    ItemHeight = 0
+    TabOrder = 5
+  end
+  object lbnota1: TLabel
+    Left = 120
+    Height = 16
+    Top = 56
+    Width = 61
+    Caption = 'Sucessores:'
+    ParentColor = False
+  end
+end

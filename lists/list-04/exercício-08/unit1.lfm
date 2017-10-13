@@ -1,0 +1,49 @@
+object Form1: TForm1
+  Left = 1042
+  Height = 202
+  Top = 120
+  Width = 204
+  BorderStyle = bsSingle
+  Caption = 'Exercicio 8'
+  ClientHeight = 202
+  ClientWidth = 204
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -15
+  Font.Name = 'Arial Narrow'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Font.Style = [fsBold]
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object BitBtn1: TBitBtn
+    Left = 8
+    Height = 30
+    Top = 8
+    Width = 88
+    Caption = '&Verificar'
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BitBtn1Click
+    TabOrder = 0
+  end
+  object BitBtn2: TBitBtn
+    Left = 104
+    Height = 30
+    Top = 8
+    Width = 88
+    Cancel = True
+    DefaultCaption = True
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BitBtn2Click
+    TabOrder = 1
+  end
+  object L1: TListBox
+    Left = 8
+    Height = 144
+    Top = 48
+    Width = 184
+    ItemHeight = 0
+    TabOrder = 2
+  end
+end

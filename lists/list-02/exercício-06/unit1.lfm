@@ -1,0 +1,134 @@
+object FrmCrescente: TFrmCrescente
+  Left = 1056
+  Height = 209
+  Top = 132
+  Width = 305
+  BorderStyle = bsSingle
+  Caption = 'Exercicio 06'
+  ClientHeight = 209
+  ClientWidth = 305
+  Font.CharSet = ANSI_CHARSET
+  Font.Height = -13
+  Font.Name = 'Verdana'
+  Font.Pitch = fpVariable
+  Font.Quality = fqDraft
+  Position = poScreenCenter
+  LCLVersion = '1.0.14.0'
+  object Label1: TLabel
+    Left = 17
+    Height = 17
+    Top = 16
+    Width = 75
+    Caption = '1º número:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 17
+    Height = 17
+    Top = 44
+    Width = 75
+    Caption = '2º número:'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 17
+    Height = 17
+    Top = 72
+    Width = 75
+    Caption = '3º número:'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 17
+    Height = 17
+    Top = 104
+    Width = 75
+    Caption = '4º número:'
+    ParentColor = False
+  end
+  object Label5: TLabel
+    Left = 17
+    Height = 17
+    Top = 136
+    Width = 75
+    Caption = '5º número:'
+    ParentColor = False
+  end
+  object txtn1: TEdit
+    Left = 103
+    Height = 24
+    Top = 9
+    Width = 80
+    TabOrder = 0
+  end
+  object txtn2: TEdit
+    Left = 103
+    Height = 24
+    Top = 37
+    Width = 80
+    TabOrder = 1
+  end
+  object txtn3: TEdit
+    Left = 103
+    Height = 24
+    Top = 65
+    Width = 80
+    TabOrder = 2
+  end
+  object txtn4: TEdit
+    Left = 103
+    Height = 24
+    Top = 96
+    Width = 80
+    TabOrder = 3
+  end
+  object txtn5: TEdit
+    Left = 103
+    Height = 24
+    Top = 128
+    Width = 80
+    TabOrder = 4
+  end
+  object BtnExibir: TBitBtn
+    Left = 16
+    Height = 30
+    Top = 168
+    Width = 80
+    Caption = '&Exibir'
+    Kind = bkOK
+    ModalResult = 1
+    OnClick = BtnExibirClick
+    TabOrder = 5
+  end
+  object BtnCancelar: TBitBtn
+    Left = 112
+    Height = 30
+    Top = 168
+    Width = 83
+    Caption = '&Cancelar'
+    Kind = bkCancel
+    ModalResult = 2
+    OnClick = BtnCancelarClick
+    TabOrder = 6
+  end
+  object BtnCancelar1: TBitBtn
+    Left = 208
+    Height = 30
+    Top = 168
+    Width = 80
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    OnClick = BtnCancelar1Click
+    TabOrder = 7
+  end
+  object LBoxN: TListBox
+    Left = 205
+    Height = 144
+    Top = 8
+    Width = 83
+    Color = clBtnFace
+    ItemHeight = 0
+    TabOrder = 8
+  end
+end
